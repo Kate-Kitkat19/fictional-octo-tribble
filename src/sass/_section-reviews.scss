@@ -2,24 +2,18 @@
   width: 968px;
   height: 300px;
 }
-.swiper-slide{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
-.slide-text{
+.slide-text {
   max-width: 750px;
-  border-bottom: 1px solid #E1E1E1;
-  background-color: #FAFAFA;
+  border-bottom: 1px solid #e1e1e1;
+  background-color: #fafafa;
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
   color: var(--title-color);
-
 }
 
-.review-image{
+.review-image {
   max-width: 100%;
 }

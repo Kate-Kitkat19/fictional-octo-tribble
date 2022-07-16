@@ -1,18 +1,17 @@
-const { default: Swiper } = require("swiper");
-
-const swiper = new Swiper('.swiper-slide', {
-  // Optional parameters
-  direction: 'vertical',
+const swiper = new Swiper('.swiper', {
+  pagination: '.swiper-pagination',
+  slidesPerView: 3,
+  paginationClickable: true,
+  spaceBetween: 30,
+  observer: 'true',
+  observeParents: 'true',
   loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
+  spaceBetween: 10,
+  slidesPerView: 1,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
   // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  nextButton: '.swiper-button-next',
+  prevButton: '.swiper-button-prev',
 });
